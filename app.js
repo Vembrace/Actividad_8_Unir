@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const inmueblesRoutes = require('./api/routes/inmuebles');
 
+
 app.use(bodyParser.json());
 
 app.use('/api', inmueblesRoutes);
