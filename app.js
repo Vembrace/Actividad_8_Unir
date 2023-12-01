@@ -10,7 +10,7 @@ app.use('/api', inmueblesRoutes);
 // Manejo de errores
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send('Algo salió mal en el server !.(');
+  res.status(500).send('Algo salió mal en el server !(');
 });
 
 const PORT = process.env.PORT || 3000;
